@@ -7,10 +7,10 @@ namespace SBReceiver.Services
 {
     public class Service
     {
-        private readonly MessageServiceProvider _serviceProvider;
-        public Service(MessageServiceProvider serviceProvider)
+        private readonly MessageServiceProvider _messageServiceProvider;
+        public Service(MessageServiceProvider messageServiceProvider)
         {
-            _serviceProvider = serviceProvider;
+            _messageServiceProvider = messageServiceProvider;
         }
 
         public void Invoke(Message message)
@@ -25,7 +25,7 @@ namespace SBReceiver.Services
             }
             else
             {
-                var service = _serviceProvider.GetService(receivedMessage);
+                var service = _messageServiceProvider.GetService(receivedMessage);
                 if (service is null)
                 {
                     Console.WriteLine("No service found for this message type: " + receivedMessage.GetType());
