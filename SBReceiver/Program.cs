@@ -12,7 +12,6 @@ namespace SBReceiver
 
         const string connectionString = "Endpoint=sb://azuremicroservices.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=rSFJQHOrd6XRtK8ZYvybBwZvHMk3kHMsN+ASbKnUf+Q=";
         const string queueName = "personqueue";
-        static IQueueClient queueClient;
 
         static async Task Main(string[] args)
         {

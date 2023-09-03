@@ -1,4 +1,5 @@
 ﻿using Microsoft.Azure.ServiceBus;
+using Microsoft.Extensions.DependencyInjection;
 using SBShared.Const;
 using SBShared.DTOs;
 using SBShared.Models;
@@ -10,19 +11,10 @@ namespace SBReceiver.Services
 {
     public class Service
     {
-        private readonly Dictionary<Type, dynamic> _messageHandlers = new Dictionary<Type, dynamic>();
-        private readonly IMessage<AddPersonMessageDTO> _addPerson;
-        private readonly IMessage<DeletePersonMessageDTO> _deletePerson;
-        private readonly IMessage<UpdateAgeMessageDTO> _updatePersonAge;
-        private readonly IMessage<UpdateNameMessageDTO> _updatePersonName;
-        private readonly IMessage<PrintPersonsListMessageDTO> _printPersonsList;
-        public Service(IMessage<AddPersonMessageDTO> addPerson, IMessage<DeletePersonMessageDTO> deletePerson, IMessage<UpdateAgeMessageDTO> updatePersonAge, IMessage<UpdateNameMessageDTO> updatePersonName, IMessage<PrintPersonsListMessageDTO> printPersonsList)
+        private readonly IServiceProvider _serviceProvider;
+        public Service(IServiceProvider serviceProvider)
         {
-            _messageHandlers[typeof(AddPersonMessageDTO)] = addPerson;
-            _messageHandlers[typeof(DeletePersonMessageDTO)] = deletePerson;
-            _messageHandlers[typeof(UpdateAgeMessageDTO)] = updatePersonAge;
-            _messageHandlers[typeof(UpdateNameMessageDTO)] = updatePersonName;
-            _messageHandlers[typeof(PrintPersonsListMessageDTO)] = printPersonsList;
+            _serviceProvider = serviceProvider;
         }
 
         public void Invoke(Message message)
@@ -38,15 +30,16 @@ namespace SBReceiver.Services
             else
             {
                 Type messageType = receivedMessage.GetType();
-                if (_messageHandlers.ContainsKey(messageType))
-                {
-                    dynamic handler = _messageHandlers[messageType];
-                    handler.Invoke((dynamic)receivedMessage);
-                }
-                else
+                
+                Type openType = typeof(IMessage<>);
+                Type closedType = openType.MakeGenericType(messageType);
+                var service = (dynamic)_serviceProvider.GetService(closedType);
+                if (service is null)
                 {
                     Console.WriteLine("No handler found for message type: " + messageType.Name);
                 }
+                else service.Invoke((dynamic)receivedMessage);
+                
             }
         }
 
