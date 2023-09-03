@@ -1,18 +1,14 @@
 ﻿using Microsoft.Azure.ServiceBus;
-using Microsoft.Extensions.DependencyInjection;
 using SBShared.Const;
-using SBShared.DTOs;
-using SBShared.Models;
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace SBReceiver.Services
 {
     public class Service
     {
-        private readonly IServiceProvider _serviceProvider;
-        public Service(IServiceProvider serviceProvider)
+        private readonly MessageServiceProvider _serviceProvider;
+        public Service(MessageServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
         }
@@ -29,14 +25,10 @@ namespace SBReceiver.Services
             }
             else
             {
-                Type messageType = receivedMessage.GetType();
-                
-                Type openType = typeof(IMessage<>);
-                Type closedType = openType.MakeGenericType(messageType);
-                var service = (dynamic)_serviceProvider.GetService(closedType);
+                var service = _serviceProvider.GetService(receivedMessage);
                 if (service is null)
                 {
-                    Console.WriteLine("No handler found for message type: " + messageType.Name);
+                    Console.WriteLine("No service found for this message type: " + receivedMessage.GetType());
                 }
                 else service.Invoke((dynamic)receivedMessage);
                 
