@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = SBReceiver
+build_property.ProjectDir = F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBReceiver\

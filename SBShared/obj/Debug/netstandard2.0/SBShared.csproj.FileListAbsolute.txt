@@ -1,0 +1,10 @@
+F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\bin\Debug\netstandard2.0\SBShared.deps.json
+F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\bin\Debug\netstandard2.0\SBShared.dll
+F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\bin\Debug\netstandard2.0\SBShared.pdb
+F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\netstandard2.0\SBShared.csproj.AssemblyReference.cache
+F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\netstandard2.0\SBShared.GeneratedMSBuildEditorConfig.editorconfig
+F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\netstandard2.0\SBShared.AssemblyInfoInputs.cache
+F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\netstandard2.0\SBShared.AssemblyInfo.cs
+F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\netstandard2.0\SBShared.csproj.CoreCompileInputs.cache
+F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\netstandard2.0\SBShared.dll
+F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\netstandard2.0\SBShared.pdb
