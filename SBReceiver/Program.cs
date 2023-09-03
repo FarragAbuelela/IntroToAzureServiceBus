@@ -24,7 +24,7 @@ namespace SBReceiver
             services.AddTransient<IMessage<UpdateNameMessageDTO>, UpdateNameMessage>();
             services.AddTransient<IMessage<DeletePersonMessageDTO>, DeletePersonMessage>();
             services.AddTransient<IMessage<PrintPersonsListMessageDTO>, PrintPersonsListMessage>();
-            services.AddTransient<Service>();
+            services.AddSingleton<Service>();
             var serviceProvider = services.BuildServiceProvider();
             var messageServices = serviceProvider.GetRequiredService<MessageService>();
 
