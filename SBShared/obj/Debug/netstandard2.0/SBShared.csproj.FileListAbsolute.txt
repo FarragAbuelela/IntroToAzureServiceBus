@@ -8,3 +8,13 @@ F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\nets
 F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\netstandard2.0\SBShared.csproj.CoreCompileInputs.cache
 F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\netstandard2.0\SBShared.dll
 F:\DevOps Respositories\IntroToAzureServiceBusSourceCode\SBShared\obj\Debug\netstandard2.0\SBShared.pdb
+E:\solutions\IntroToAzureServiceBus\SBShared\bin\Debug\netstandard2.0\SBShared.deps.json
+E:\solutions\IntroToAzureServiceBus\SBShared\bin\Debug\netstandard2.0\SBShared.dll
+E:\solutions\IntroToAzureServiceBus\SBShared\bin\Debug\netstandard2.0\SBShared.pdb
+E:\solutions\IntroToAzureServiceBus\SBShared\obj\Debug\netstandard2.0\SBShared.csproj.AssemblyReference.cache
+E:\solutions\IntroToAzureServiceBus\SBShared\obj\Debug\netstandard2.0\SBShared.GeneratedMSBuildEditorConfig.editorconfig
+E:\solutions\IntroToAzureServiceBus\SBShared\obj\Debug\netstandard2.0\SBShared.AssemblyInfoInputs.cache
+E:\solutions\IntroToAzureServiceBus\SBShared\obj\Debug\netstandard2.0\SBShared.AssemblyInfo.cs
+E:\solutions\IntroToAzureServiceBus\SBShared\obj\Debug\netstandard2.0\SBShared.csproj.CoreCompileInputs.cache
+E:\solutions\IntroToAzureServiceBus\SBShared\obj\Debug\netstandard2.0\SBShared.dll
+E:\solutions\IntroToAzureServiceBus\SBShared\obj\Debug\netstandard2.0\SBShared.pdb

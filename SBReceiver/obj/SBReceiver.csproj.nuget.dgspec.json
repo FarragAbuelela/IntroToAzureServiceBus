@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBReceiver\\SBReceiver.csproj": {}
+    "E:\\solutions\\IntroToAzureServiceBus\\SBReceiver\\SBReceiver.csproj": {}
   },
   "projects": {
-    "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBReceiver\\SBReceiver.csproj": {
+    "E:\\solutions\\IntroToAzureServiceBus\\SBReceiver\\SBReceiver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBReceiver\\SBReceiver.csproj",
+        "projectUniqueName": "E:\\solutions\\IntroToAzureServiceBus\\SBReceiver\\SBReceiver.csproj",
         "projectName": "SBReceiver",
-        "projectPath": "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBReceiver\\SBReceiver.csproj",
-        "packagesPath": "C:\\Users\\farra\\.nuget\\packages\\",
-        "outputPath": "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBReceiver\\obj\\",
+        "projectPath": "E:\\solutions\\IntroToAzureServiceBus\\SBReceiver\\SBReceiver.csproj",
+        "packagesPath": "C:\\Users\\Iken\\.nuget\\packages\\",
+        "outputPath": "E:\\solutions\\IntroToAzureServiceBus\\SBReceiver\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\farra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Iken\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBShared\\SBShared.csproj": {
-                "projectPath": "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBShared\\SBShared.csproj"
+              "E:\\solutions\\IntroToAzureServiceBus\\SBShared\\SBShared.csproj": {
+                "projectPath": "E:\\solutions\\IntroToAzureServiceBus\\SBShared\\SBShared.csproj"
               }
             }
           }
@@ -77,17 +77,17 @@
         }
       }
     },
-    "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBShared\\SBShared.csproj": {
+    "E:\\solutions\\IntroToAzureServiceBus\\SBShared\\SBShared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBShared\\SBShared.csproj",
+        "projectUniqueName": "E:\\solutions\\IntroToAzureServiceBus\\SBShared\\SBShared.csproj",
         "projectName": "SBShared",
-        "projectPath": "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBShared\\SBShared.csproj",
-        "packagesPath": "C:\\Users\\farra\\.nuget\\packages\\",
-        "outputPath": "F:\\DevOps Respositories\\IntroToAzureServiceBusSourceCode\\SBShared\\obj\\",
+        "projectPath": "E:\\solutions\\IntroToAzureServiceBus\\SBShared\\SBShared.csproj",
+        "packagesPath": "C:\\Users\\Iken\\.nuget\\packages\\",
+        "outputPath": "E:\\solutions\\IntroToAzureServiceBus\\SBShared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\farra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Iken\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
